@@ -17,6 +17,6 @@ class ServiceprofileApplicationTests {
 	}
 	@Test
 	void contextLoads3() {
-		Assertions.assertEquals(1,1);
+		Assertions.assertEquals(2,1);
 	}
 }
