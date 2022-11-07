@@ -16,6 +16,12 @@ pipeline {
                 sh 'mvn package'
             }
         }
+        stage('test')
+        {
+             steps{
+                sh 'mvn test'
+             }
+         }
         stage('build image'){
             steps{
                 echo "Building our image"
