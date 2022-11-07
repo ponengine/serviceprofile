@@ -28,12 +28,13 @@ pipeline {
         }
         stage('Release'){
             steps{
-                script{
-                    withDockerRegistry(credentialsId: 'docker-hub-login') {
-                        dockerImg.push();
-                        dockerImg.push('latest');
-                    }
-                }
+            sh 'pwd'
+//                 script{
+//                     withDockerRegistry(credentialsId: 'docker-hub-login') {
+//                         dockerImg.push();
+//                         dockerImg.push('latest');
+//                     }
+//                 }
             }
         }
     }
